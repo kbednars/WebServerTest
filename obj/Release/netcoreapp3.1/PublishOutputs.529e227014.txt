@@ -1,0 +1,7 @@
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\KBWebApp.exe
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\KBWebApp.dll
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\KBWebApp.deps.json
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\KBWebApp.runtimeconfig.json
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\PubTmp\Out\KBWebApp.pdb
