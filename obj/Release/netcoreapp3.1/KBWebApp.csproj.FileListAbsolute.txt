@@ -17,3 +17,6 @@ C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.
 C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.dll
 C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.pdb
 C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.genruntimeconfig.cache
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.csprojAssemblyReference.cache
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.Systemd.dll
+C:\Users\krwy\source\repos\KBWebApp\KBWebApp\obj\Release\netcoreapp3.1\KBWebApp.csproj.CopyComplete
