@@ -19,7 +19,7 @@ phases:
       - docker build -t kbwebapp_tag . -f ./Dockerfile
 
   post_build:
-    commmands:
+    commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - aws ecr get-login --no-include-email --profile=kbednars --region=eu-central-1
