@@ -22,7 +22,6 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - aws ecr get-login --no-include-email --profile=kbednars --region=eu-central-1
       - docker tag kbwebapp_tag 108607216059.dkr.ecr.eu-central-1.amazonaws.com/kbweb:latest
       - docker push 108607216059.dkr.ecr.eu-central-1.amazonaws.com/kbweb:latest
       - echo Connecting via SSH...
