@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krwy\\source\\repos\\KBWebApp\\KBWebApp\\KBWebApp.csproj": {}
+    "/Users/kbednars/Desktop/WebServerTest/KBWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krwy\\source\\repos\\KBWebApp\\KBWebApp\\KBWebApp.csproj": {
+    "/Users/kbednars/Desktop/WebServerTest/KBWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krwy\\source\\repos\\KBWebApp\\KBWebApp\\KBWebApp.csproj",
+        "projectUniqueName": "/Users/kbednars/Desktop/WebServerTest/KBWebApp.csproj",
         "projectName": "KBWebApp",
-        "projectPath": "C:\\Users\\krwy\\source\\repos\\KBWebApp\\KBWebApp\\KBWebApp.csproj",
-        "packagesPath": "C:\\Users\\krwy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krwy\\source\\repos\\KBWebApp\\KBWebApp\\obj\\",
+        "projectPath": "/Users/kbednars/Desktop/WebServerTest/KBWebApp.csproj",
+        "packagesPath": "/Users/kbednars/.nuget/packages/",
+        "outputPath": "/Users/kbednars/Desktop/WebServerTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krwy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/kbednars/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,6 +53,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/kbednars/.dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -34,6 +34,10 @@ namespace KBWebApp
                 {
                     await context.Response.WriteAsync("Hello");
                 });
+                endpoints.MapGet("/new", async context =>
+                {
+                    await context.Response.WriteAsync("New endpoint");
+                });
             });
         }
     }
