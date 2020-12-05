@@ -28,6 +28,6 @@ phases:
       - echo Pushing the Docker images...
       - echo Connecting via SSH...
       - sshpass -p CodebuildTest ssh ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com <<- 'ENDSSH'
-          sudo systemctl start kbwebapp
-          ENDSSH
+        - sudo systemctl start kbwebapp
+        - ENDSSH
       - echo SSH connection is completed
