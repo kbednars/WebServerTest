@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt-get install sshpass
+      - sudo apt-get install sshpass
     runtime-versions:
       docker: 18
 
