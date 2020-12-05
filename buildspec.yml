@@ -25,7 +25,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - echo Connecting via SSH...
-      - sudo apt-get install sshpass
+      - sudo yum install sshpass
       - sshpass -p 246Ubuntu246 ssh ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com << 'ENDSSH'
       - sudo systemctl start kbwebapp
       - ENDSSH
