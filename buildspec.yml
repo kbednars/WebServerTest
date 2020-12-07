@@ -27,5 +27,5 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - echo Connecting via SSH...
-      - sshpass -p $password ssh ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com
+      - sshpass -p CodebuildTest ssh -o StrictHostKeyChecking=no ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com "sudo systemctl start kbwebapp"
       - echo SSH connection is completed
