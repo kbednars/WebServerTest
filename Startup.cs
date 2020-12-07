@@ -38,9 +38,9 @@ namespace KBWebApp
                 {
                     await context.Response.WriteAsync("New endpoint");
                 });
-                endpoints.MapGet("/new3", async context =>
+                endpoints.MapGet("/new2", async context =>
                 {
-                    await context.Response.WriteAsync("New endpoint - 3");
+                    await context.Response.WriteAsync("New endpoint - 2");
                 });
             });
         }
