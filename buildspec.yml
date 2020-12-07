@@ -2,32 +2,30 @@ version: 0.2
 
 phases:
   install:
+    commands:
+      - yum -y install sshpass
     runtime-versions:
       docker: 18
 
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login
-    - echo "Starting docker daemon..."
-    - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
-    - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
+      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+      - echo "Starting docker daemon..."
+      - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
+      - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
 
   build:
     commands:
-    - echo Build started on `date`
-    - docker build -t kbwebapp_tag . -f ./Dockerfile
-
-  post_build:
-    commmands:
-      - echo Build completed on `date`
-      - echo Pushing the Docker images...
-      - aws ecr get-login --no-include-email --profile=kbednars --region=eu-central-1
+      - echo Build started on `date`
+      - docker build -t kbwebapp_tag . -f ./Dockerfile
       - docker tag kbwebapp_tag 108607216059.dkr.ecr.eu-central-1.amazonaws.com/kbweb:latest
       - docker push 108607216059.dkr.ecr.eu-central-1.amazonaws.com/kbweb:latest
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
       - echo Connecting via SSH...
-      - ssh -i key_pem ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com << 'ENDSSH'
-      - sudo docker container kill ubuntu_image
-      - sudo docker run --name ubuntu_image -p 80:80 -d 108607216059.dkr.ecr.eu-central-1.amazonaws.com/kbweb:latest
-      - ENDSSH
+      - sshpass -p $password ssh -o StrictHostKeyChecking=no ubuntu@ec2-18-185-65-126.eu-central-1.compute.amazonaws.com "sudo systemctl start kbwebapp"
       - echo SSH connection is completed
